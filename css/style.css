@@ -1,0 +1,16 @@
+:root {
+  /* Primary colors */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral colors */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+
+  /* Font */
+  --main-font: "Karla", sans-serif;
+
+  /* Font weights */
+  --w-400: 400;
+  --w-700: 700;
+}
