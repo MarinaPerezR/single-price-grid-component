@@ -1,11 +1,13 @@
 :root {
   /* Primary colors */
   --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 47%, 52%);
   --bright-yellow: hsl(71, 73%, 54%);
 
   /* Neutral colors */
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
+  --white: white;
 
   /* Font */
   --main-font: "Karla", sans-serif;
@@ -24,6 +26,7 @@
 body {
   background-color: var(--light-gray);
   font-family: var(--main-font);
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,3 +34,65 @@ body {
   height: 100vh;
   margin: 0;
 }
+
+main {
+  display: grid;
+  grid-template-areas: "one one" 
+  "two three";
+}
+
+section {
+  padding: 40px;
+}
+
+section.join {
+  background-color: var(--white);
+  grid-area: one;
+}
+
+section.join h1 {
+  color: var(--cyan);
+}
+
+section.join h2 {
+  color: var(--bright-yellow);
+}
+
+section.join p {
+  color: var(--grayish-blue);
+}
+
+section.subscription {
+  background-color: var(--cyan);
+  grid-area: two;
+}
+
+section.subscription .price, h3, p, button {
+  color: var(--white);
+}
+
+section.subscription .sub-price {
+  color: var(--grayish-blue);
+}
+
+section.subscription button {
+  background-color: var(--bright-yellow);
+  padding: 15px 80px;
+  border: none;
+  border-radius: 5px;
+}
+
+section.why {
+  background-color: var(--light-cyan);
+  grid-area: three;
+}
+
+section.why h3 {
+  color: var(--white);
+}
+
+section.why ul {
+  color: var(--light-gray)
+}
+
+
