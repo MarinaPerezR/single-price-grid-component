@@ -41,6 +41,7 @@ main {
     "one one"
     "two three";
   border-radius: 10px;
+  box-shadow: -1px 7px 27px -8px rgba(0,0,0,0.55);
   overflow: hidden;
   width: 43%;
   line-height: 1.5;
@@ -143,10 +144,18 @@ section.why ul {
 }
 
 footer {
-  padding: 20px;
+  padding: 60px 0 0 0;
   color: var(--grayish-blue);
 }
 
 footer a {
   color: var(--bright-yellow);
+}
+
+@media (max-width: 940px) {
+  main {
+    grid-template-areas: "one"
+    "two"
+    "three";
+  }
 }
